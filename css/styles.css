@@ -45,7 +45,7 @@ body {
 h2 {
   color: var(--very-light-gray);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 p:not(.learn-more-button) {
@@ -136,4 +136,37 @@ p:not(.learn-more-button) {
 .attribution a {
   color: var(--bright-orange);
   text-decoration: none;
+}
+
+@media screen and (max-width: 799px) {
+  .component-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 375px;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  p:not(.learn-more-button) {
+    padding: 5px 10px 10px 0;
+  }
+
+  .component-column {
+    padding: 50px 65px 50px 65px;
+  }
+
+  .column-1 {
+    background-color: var(--bright-orange);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .column-3 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .learn-more-button{
+    margin-top: 5px;
+  }
 }
